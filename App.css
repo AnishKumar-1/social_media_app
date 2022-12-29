@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: rgb(239, 235, 235);
+}
+
+.All-Links {
+  /* background-color: aliceblue; */
+  background-color: rgb(93, 93, 223);
+  height: 58px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  box-shadow: 2px 1px 3px rgb(189, 213, 235);
+}
+
+.All-Links .active {
+  color: rgb(0, 255, 42);
+  font-weight: bold;
+}
+
+.All-Links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.login-container {
+  background-color: rgb(255, 255, 255);
+  width: 440px;
+  height: 470px;
+  margin: auto;
+  margin-top: 60px;
+
+}
+
+@media screen and (max-width:502px) {
+  .login-container {
+    width: 370px;
+  }
+}
+
+.login-container h1 {
+  text-align: center;
+  padding-top: 9px;
+  font-weight: bold;
+  color: rgb(5, 5, 185);
+  font-size: 25px;
+
+}
+
+
+.login-sub-container {
+  border-radius: 2px;
+  margin: 30px 0px 0px 70px;
+}
+
+
+
+
+
+.login-sub-container input {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  height: 44px;
+  width: 85%;
+  border-radius: 5px;
+  margin-top: 9px;
+}
+
+.login-sub-container input:focus {
+  outline: none;
+}
+
+.login-sub-container input value {
+  padding: 10px;
+}
+
+::placeholder {
+  padding: 5px;
+}
+
+.login-sub-container button {
+  height: 40px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  color: blanchedalmond;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(77, 77, 201);
+}
+
+.login-sub-container button:hover {
+  background-color: blue;
+}
+
+.signup_forget {
+  text-align: center;
+  margin-top: 40px;
+  display: block;
+}
+
+.signup_forget a {
+  padding: 10px;
+}
+
+.changelogin {
+  font-size: 19px;
+}
+
+.signup-message {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(12, 171, 12);
+}
+
+.small-text {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.logoutbutton {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.showpassword input {
+  width: 270px;
+  margin: auto;
+  position: relative;
+
+}
+
+
+
+.showpassword {
+  display: flex;
+  background-color: white;
+  width: 312px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid blue;
+}
+
+.showpassword svg {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.svg-container {
+  margin-top: 8.5px;
+  margin-right: 7px;
+}
+
+.post-container button {
+  margin: 10px 0px 0px 700px;
+  border-radius: 8%;
+  background-image: linear-gradient(to right, blue, red);
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 1px 3px blue;
+  width: 110px;
+  height: 40px;
+}
+
+.post-container a {
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+
+@media screen and (max-width:632px) {
+  .post-container button {
+    margin-left: 206px;
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+.post_inputs_constainer {
+  background-color: rgb(157, 178, 220);
+  width: 490px;
+  height: 550px;
+  margin: auto;
+  margin-top: 55px;
+  border-radius: 5px;
+
+}
+
+.post_inputs_field {
+  position: absolute;
+  z-index: 1;
+
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.post_inputs_field input {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  border-radius: 4px;
+  font-size: 17px;
+
+}
+
+.post_inputs_field label {
+  font-weight: bold;
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+
+.post_inputs_field .des {
+  height: 200px;
+}
+
+.post_inputs_field button {
+  width: 330px;
+  height: 34px;
+  background-color: rgb(48, 48, 208);
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.post_inputs_field button:hover {
+  background-color: blue;
+}
+
+textarea {
+  border: none;
+  height: 250px;
+  width: 310px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.post-data-container {
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 600px;
+  box-shadow: 2px 2px 2px transparent;
+  margin: auto;
+  margin-top:20px;
+  border-radius: 1px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+@media screen and (max-width:632px) {
+ .post-data-container{
+  width: 400px;
+ }
+}
+@media screen and (max-width:720px) {
+  .post-container button {
+   
+    margin-left: 206px;
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+
+.img-container {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.img-container img {
+ width: 140px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 50%;
+ 
+
+}
+.title_location_des_container{
+
+  margin: auto;
+ padding-top: 20px;
+  /* height: 380px; */
+  height: fit-content;
+  border-radius: 5px;
+  border-bottom-right-radius:40px;
+  border-bottom-left-radius:40px;
+  box-shadow: 2px 2px 2px transparent;
+}
+.title_location_des_container h4, h5, p{
+  padding:10px;
+}
+.post_title_location{
+  width: fit-content;
+  margin-left:20px;
+}
+.post_dis{
+
+  height:fit-content;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-bottom-right-radius:40px;
+  border-bottom-left-radius:40px;
+  box-shadow: 2px 2px 2px transparent;
+  padding-top: 15px;
+  padding-left: 20px;
+  overflow-y: auto;
+  overflow-x:hidden;
+
+}
+
+.c_button button{
+  margin-left:650px;
+  margin-top: 15px;
+  width: 150px;
+  height: 30px;
+  color: blue;
+  font-weight: bold;
+  border-color: rgb(20, 24, 233);
+  cursor: pointer;
+  background-color: rgb(227, 227, 255);
+}
+.c_button a{
+  text-decoration: none;
+  font-size: 16px;
+}
+@media screen and (max-width:510px){
+  .c_button button{
+    margin-left:170px;
+  } 
+}
+
+.edit_delete_post{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 15px;
+
+}
+
+.edit_delete_post a{
+  color:black;
+}
+.img_email{
+display: flex;
+align-items: center;
+}
+.img_email img{
+  height: 47px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
